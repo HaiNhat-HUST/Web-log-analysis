@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.soict.cybersec.webloganalysis.controller.LoginController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #948979;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="29.0" layoutY="56.0" text="Service Log Analysis" textFill="#3c5b6f">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="password" layoutX="215.0" layoutY="187.0" prefHeight="26.0" prefWidth="149.0" />
+                        <Button layoutX="305.0" layoutY="288.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="60.0" text="Start" />
+                        <Label layoutX="52.0" layoutY="186.0" prefHeight="27.0" prefWidth="87.0" text="Password:">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="137.0" prefHeight="27.0" prefWidth="126.0" text="Choose profile:">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="168.0" layoutY="289.0" mnemonicParsing="false" onAction="#addNewProfile" text="Create new profile" />
+                        <ComboBox fx:id="profileCb" layoutX="214.0" layoutY="138.0" prefWidth="150.0" />
+                    </children>
+                </AnchorPane>
+            </center>
+            <left>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DFD0B8;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="profileChoices" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/login.png" />
+                            </image>
+                        </ImageView>
+                    </children></AnchorPane>
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>
