@@ -1,7 +1,7 @@
 module hust.soict.cybersec.webloganalysis {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
+    requires com.google.gson;
     
     opens hust.soict.cybersec.webloganalysis to javafx.fxml;
     exports hust.soict.cybersec.webloganalysis;

@@ -1,8 +1,10 @@
 package hust.soict.cybersec.webloganalysis.controller;
 
 import hust.soict.cybersec.webloganalysis.Main;
+import hust.soict.cybersec.webloganalysis.util.RuleTable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
@@ -10,7 +12,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 
-import hust.soict.cybersec.webloganalysis.Log.LogEntry.Rule;
+import hust.soict.cybersec.webloganalysis.model.LogEntry.Rule;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
