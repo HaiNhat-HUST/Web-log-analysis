@@ -10,7 +10,12 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 
-public class DashboardController {
+import hust.soict.cybersec.webloganalysis.Log.LogEntry.Rule;
+import java.net.URL;
+import java.time.LocalDate;
+import java.util.ResourceBundle;
+
+public class DashboardController implements Initializable {
     private Main mainApp;
 
     public void setMainApp(Main mainApp) {
@@ -36,7 +41,7 @@ public class DashboardController {
     private Button refreshButton;
 
     @FXML
-    private TableView<?> ruletable;
+    private TableView<Rule> ruletable;
 
     @FXML
     private TableView<?> statustable;
@@ -66,4 +71,20 @@ public class DashboardController {
     void switchToWelcome(ActionEvent event) {
         this.mainApp.switchToWelcome();
     }
+
+    private  void setupDatePicker() {
+        datePicker.setValue(LocalDate.now());
+    }
+
+    private void setupRuleTable() {
+        RuleTable.creatTable(ruletable);
+        RuleTable.addData(ruletable, datePicker.getValue().toString());
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        setupDatePicker();
+        setupRuleTable();
+    }
+    
 }
