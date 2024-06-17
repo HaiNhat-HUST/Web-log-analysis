@@ -2,6 +2,7 @@ package hust.soict.cybersec.webloganalysis.controller;
 
 import com.google.gson.JsonObject;
 import hust.soict.cybersec.webloganalysis.Main;
+import hust.soict.cybersec.webloganalysis.util.Config;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -40,7 +41,7 @@ public class CreProfileController  {
         FileChooser filechooser = new FileChooser();
         filechooser.setTitle("Select the log source");
 
-        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_demo");
+        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
         filechooser.setInitialDirectory(resourceDir);
         java.io.File selectedFile = filechooser.showOpenDialog(stage);
 
@@ -56,7 +57,7 @@ public class CreProfileController  {
         FileChooser filechooser = new FileChooser();
         filechooser.setTitle("Select the log source");
 
-        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_demo");
+        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
         filechooser.setInitialDirectory(resourceDir);
         java.io.File selectedFile = filechooser.showOpenDialog(stage);
 
