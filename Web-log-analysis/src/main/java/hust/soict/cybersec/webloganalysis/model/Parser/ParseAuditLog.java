@@ -1,4 +1,4 @@
-package hust.soict.cybersec.webloganalysis.Log.Parser;
+package hust.soict.cybersec.webloganalysis.model.Parser;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import hust.soict.cybersec.webloganalysis.Log.LogEntry.AuditLog;
+import hust.soict.cybersec.webloganalysis.model.LogEntry.AuditLog;
 
 public class ParseAuditLog {
     private final String ruleRegex = "(?i)attack\\-(?:\\w+\\-)*([a-z]+)\\.conf";

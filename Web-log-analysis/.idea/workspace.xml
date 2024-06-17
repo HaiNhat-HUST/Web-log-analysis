@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b2750c3-6897-490b-b4a7-7ae00c724e17" name="Changes" comment="" />
+    <list default="true" id="6b2750c3-6897-490b-b4a7-7ae00c724e17" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/CreProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/CreProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/model/LogEntry/AuditLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/model/LogEntry/AuditLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/model/Parser/ParseAuditLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/model/Parser/ParseAuditLog.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +54,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/login-and-profile",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/image",
     "node.js.detected.package.eslint": "true",
@@ -107,6 +113,9 @@
       <workItem from="1718333519127" duration="4921000" />
       <workItem from="1718467126805" duration="1734000" />
       <workItem from="1718469111473" duration="59000" />
+      <workItem from="1718530583884" duration="425000" />
+      <workItem from="1718532738399" duration="1568000" />
+      <workItem from="1718641755511" duration="1031000" />
     </task>
     <servers />
   </component>

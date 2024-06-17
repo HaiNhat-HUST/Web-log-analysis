@@ -15,10 +15,6 @@ import java.util.ResourceBundle;
 public class LoginController implements Initializable {
     private Main mainApp;
 
-    public void setMainApp(Main mainApp) {
-        this.mainApp = mainApp;
-    }
-
     @FXML
     private TextField password;
 
@@ -28,10 +24,15 @@ public class LoginController implements Initializable {
     @FXML
     private ImageView profileChoices;
 
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
     @FXML
     void addNewProfile(ActionEvent event) {
         this.mainApp.switchToRegister();
     }
+
 
     @FXML
     void start(ActionEvent event) {

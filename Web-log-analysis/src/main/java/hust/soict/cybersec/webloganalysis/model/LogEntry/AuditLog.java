@@ -1,4 +1,4 @@
-package hust.soict.cybersec.webloganalysis.Log.LogEntry;
+package hust.soict.cybersec.webloganalysis.model.LogEntry;
 
 import javafx.beans.property.SimpleStringProperty;
 
