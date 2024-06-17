@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import hust.soict.cybersec.webloganalysis.model.LogEntry.Rule;
-import hust.soict.cybersec.webloganalysis.Log.Parser.ParseAuditLog;
+import hust.soict.cybersec.webloganalysis.model.Parser.ParseAuditLog;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
