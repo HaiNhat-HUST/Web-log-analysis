@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b2750c3-6897-490b-b4a7-7ae00c724e17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/CreProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/CreProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/RuleTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/RuleTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/login-and-profile",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/image",
+    "last_opened_file_path": "C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/log_sample",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,6 +64,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Web-log-analysis\Web-log-analysis\src\main\resources\hust\soict\cybersec\webloganalysis\log_sample" />
       <recent name="C:\Users\Lenovo\Desktop\Web-log-analysis\Web-log-analysis\src\main\resources\hust\soict\cybersec\webloganalysis\image" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -113,22 +113,11 @@
       <workItem from="1718469111473" duration="59000" />
       <workItem from="1718530583884" duration="425000" />
       <workItem from="1718532738399" duration="1568000" />
-      <workItem from="1718641755511" duration="1766000" />
+      <workItem from="1718641755511" duration="2467000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/CreProfileController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
