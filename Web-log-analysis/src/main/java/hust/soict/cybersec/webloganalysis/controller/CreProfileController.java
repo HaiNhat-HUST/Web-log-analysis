@@ -1,17 +1,20 @@
 package hust.soict.cybersec.webloganalysis.controller;
 
+import com.google.gson.JsonObject;
 import hust.soict.cybersec.webloganalysis.Main;
+import hust.soict.cybersec.webloganalysis.util.Config;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
-public class CreProfileController {
+import java.io.File;
+
+public class CreProfileController  {
     private Main mainApp;
-
-    public void setMainApp(Main mainApp) {
-        this.mainApp = mainApp;
-    }
 
     @FXML
     private TextField apacheLogPath;
@@ -25,9 +28,42 @@ public class CreProfileController {
     @FXML
     private TextField profileName;
 
+
+
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
     @FXML
     void apacheBrowse(ActionEvent event) {
+        apacheLogPath.setText("");
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        FileChooser filechooser = new FileChooser();
+        filechooser.setTitle("Select the log source");
 
+        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
+        filechooser.setInitialDirectory(resourceDir);
+        java.io.File selectedFile = filechooser.showOpenDialog(stage);
+
+        if (selectedFile != null) {
+            apacheLogPath.setText(selectedFile.getAbsolutePath());
+        }
+    }
+
+    @FXML
+    void modsecBrowse(ActionEvent event) {
+        modsecLogPath.setText("");
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        FileChooser filechooser = new FileChooser();
+        filechooser.setTitle("Select the log source");
+
+        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
+        filechooser.setInitialDirectory(resourceDir);
+        java.io.File selectedFile = filechooser.showOpenDialog(stage);
+
+        if (selectedFile != null) {
+            modsecLogPath.setText(selectedFile.getAbsolutePath());
+        }
     }
 
     @FXML
@@ -36,13 +72,19 @@ public class CreProfileController {
     }
 
     @FXML
-    void modsecBrowse(ActionEvent event) {
-
+    void submit(ActionEvent event) {
+        //file is not config ???
+        createNewProfile();
+        mainApp.switchToWelcome();
     }
 
-    @FXML
-    void submit(ActionEvent event) {
-
+    private void createNewProfile() {
+        JsonObject newProfile = new JsonObject();
+        newProfile.addProperty("profileName", profileName.getText());
+        newProfile.addProperty("password", password.getText());
+        newProfile.addProperty("apacheLogPath", apacheLogPath.getText());
+        newProfile.addProperty("modsecLogPath", modsecLogPath.getText());
+        Config.createNewProfile(newProfile);
     }
 
 }

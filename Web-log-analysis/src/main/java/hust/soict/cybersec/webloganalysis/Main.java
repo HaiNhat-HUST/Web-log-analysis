@@ -5,10 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
-import java.io.FileInputStream;
 
 public class Main  extends Application {
 
@@ -117,7 +114,7 @@ public class Main  extends Application {
         primaryStage.setHeight(stageHeight);
     }
 
-    public void switchToRegister() {
+    public void switchToCreProfile() {
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
         primaryStage.setScene(creProfile);
