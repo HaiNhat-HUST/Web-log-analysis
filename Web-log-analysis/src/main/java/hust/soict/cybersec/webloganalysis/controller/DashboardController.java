@@ -80,7 +80,7 @@ public class DashboardController implements Initializable {
 
     @FXML
     void switchToExplorer(ActionEvent event) {
-        this.mainApp.switchToExplorer("", "");
+        this.mainApp.switchToExplorer();
     }
 
     @FXML
@@ -100,6 +100,12 @@ public class DashboardController implements Initializable {
     private void setupRuleTable() {
         RuleTable.creatTable(ruletable);
         RuleTable.addData(ruletable, datePicker.getValue().toString());
+	ruletable.setOnMouseClicked(e -> {
+			if ((!e.isControlDown()) && (e.getClickCount() == 2)) {
+				AuditLogTable.ruleTarget = ruletable.getSelectionModel().getSelectedItem().getTriggeredRule();
+				mainApp.switchToExplorer("", "Modsec");
+			}
+		});
     }
 
     private void setupIpTableAndPieChart() {
