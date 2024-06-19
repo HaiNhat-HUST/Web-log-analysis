@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b2750c3-6897-490b-b4a7-7ae00c724e17" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/profile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/StreamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/StreamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/IpAddressToCountryName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/IpAddressToCountryName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/StreamLogTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/StreamLogTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/login-and-profile",
+    "git-widget-placeholder": "feature/stream",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/log_sample",
     "node.js.detected.package.eslint": "true",
@@ -114,6 +120,10 @@
       <workItem from="1718530583884" duration="425000" />
       <workItem from="1718532738399" duration="1568000" />
       <workItem from="1718641755511" duration="2467000" />
+      <workItem from="1718694571630" duration="1197000" />
+      <workItem from="1718723345060" duration="399000" />
+      <workItem from="1718724123414" duration="6298000" />
+      <workItem from="1718814050114" duration="1908000" />
     </task>
     <servers />
   </component>
