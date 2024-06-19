@@ -76,8 +76,7 @@ public class Main  extends Application {
         }
     }
     public void switchToWelcome() {
-//        dashboardController.trigger();
-//        streamController.trigger();
+        dashboardController.trigger();
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
         primaryStage.setScene(welcome);
@@ -124,7 +123,6 @@ public class Main  extends Application {
     public void switchToExplorer() {
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
-//        explorerController.applyFilter(typeOfFilter, typeOfTable);
         primaryStage.setScene(explorer);
         primaryStage.setWidth(stageWidth);
         primaryStage.setHeight(stageHeight);
@@ -133,7 +131,7 @@ public class Main  extends Application {
     public void switchToExplorer(String typeOfFilter, String typeOfTable) {
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
-//        explorerController.applyFilter(typeOfFilter, typeOfTable);
+        explorerController.applyFilter(typeOfFilter, typeOfTable);
         primaryStage.setScene(explorer);
         primaryStage.setWidth(stageWidth);
         primaryStage.setHeight(stageHeight);
