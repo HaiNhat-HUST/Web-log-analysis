@@ -131,7 +131,7 @@ public class Main  extends Application {
     public void switchToExplorer(String typeOfFilter, String typeOfTable) {
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
-        explorerController.applyFilter(typeOfFilter, typeOfTable);
+//        explorerController.applyFilter(typeOfFilter, typeOfTable);
         primaryStage.setScene(explorer);
         primaryStage.setWidth(stageWidth);
         primaryStage.setHeight(stageHeight);

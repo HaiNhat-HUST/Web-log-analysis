@@ -1,4 +1,4 @@
-package hust.soict.cybersec.weblognanlysis.util;
+package hust.soict.cybersec.webloganalysis.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,8 +15,8 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-import hust.soict.cybersec.weblognanlysis.model.LogEntry.IpAddress;
-import hust.soict.cybersec.weblognanlysis.model.Parser.ParseAccessLog;
+import hust.soict.cybersec.webloganalysis.model.LogEntry.IpAddress;
+import hust.soict.cybersec.webloganalysis.model.Parser.ParseAccessLog;
 
 public class IpAddressToCountryName {
     public static int totalVisitors;

@@ -1,10 +1,15 @@
 package hust.soict.cybersec.webloganalysis.controller;
 
+import hust.soict.cybersec.webloganalysis.model.LogEntry.StatusCode;
+
+import hust.soict.cybersec.webloganalysis.util.*;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.PieChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
@@ -12,12 +17,11 @@ import javafx.scene.control.TableView;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+import javafx.collections.ObservableList;
 
 import hust.soict.cybersec.webloganalysis.model.LogEntry.Rule;
 import hust.soict.cybersec.webloganalysis.Main;
-import hust.soict.cybersec.webloganalysis.util.RuleTable;
 import hust.soict.cybersec.webloganalysis.model.LogEntry.IpAddress;
-import hust.soict.cybersec.webloganalysis.util.IpAddressToCountryName;
 
 public class DashboardController implements Initializable {
     private Main mainApp;
@@ -30,7 +34,7 @@ public class DashboardController implements Initializable {
     private DatePicker datePicker;
 
     @FXML
-    private TableView<IpAdddress> iptable;
+    private TableView<IpAddress> iptable;
 
     @FXML
     private LineChart<String, Number> linechart;
@@ -75,7 +79,7 @@ public class DashboardController implements Initializable {
 		LogLineChart.addData(linechart, targetDate);
 		setupActionToLineChart();
 		StatusCodeTable.addData(statustable, targetDate);
-		ModsecRuleTable.addData(ruletable, targetDate);
+//		ModsecRuleTable.addData(ruletable, targetDate);
     }
 
     @FXML
@@ -109,7 +113,7 @@ public class DashboardController implements Initializable {
     }
 
     private void setupIpTableAndPieChart() {
-        IpAddressToCountryName.creatIpTable(iptable);
+//        IpAddressToCountryName.creatIpTable(iptable);
         IpAddressToCountryName.addData(iptable, piechart, datePicker.getValue().toString());
 		iptable.setOnMouseClicked(event -> {
 			if (event.getClickCount() == 2) {
@@ -131,7 +135,7 @@ public class DashboardController implements Initializable {
 
     private void setupActionToLineChart() {
         ObservableList<LineChart.Series<String, Number>> seriesList = linechart.getData();
-		for(Series<String, Number> series : seriesList){
+		for(XYChart.Series<String, Number> series : seriesList){
 			ObservableList<XYChart.Data<String, Number>> datas = series.getData();
 			for (XYChart.Data<String, Number> data : datas){
 				data.getNode().setOnMouseClicked(e -> {

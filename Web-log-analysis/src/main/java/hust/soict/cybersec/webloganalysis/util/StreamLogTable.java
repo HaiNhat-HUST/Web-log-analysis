@@ -12,9 +12,9 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class StreamLogTable {
-    private static ScheduledExecutorService scheduler;
-    private static String timeInterval;
-    private static long prevPointer = 0;
+    public static ScheduledExecutorService scheduler;
+    public static String timeInterval;
+    public static long prevPointer = 0;
 
     public static void createTable(TableView<AccessLog> streamTable) {
         // Declare columns
