@@ -3,6 +3,7 @@ package hust.soict.cybersec.webloganalysis.controller;
 import hust.soict.cybersec.webloganalysis.Main;
 import hust.soict.cybersec.webloganalysis.model.LogEntry.AccessLog;
 import hust.soict.cybersec.webloganalysis.util.StreamLogTable;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -68,6 +69,7 @@ public class StreamController implements Initializable {
                 }
                 else{
                     StreamLogTable.stopStreaming();
+                    streamTable.setItems(FXCollections.observableArrayList());
                     streamButton.setText("Start");
                 }
             }
@@ -96,7 +98,6 @@ public class StreamController implements Initializable {
         setupStreamTable();
         setupStreamButton();
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
