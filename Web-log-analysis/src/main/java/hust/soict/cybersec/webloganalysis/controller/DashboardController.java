@@ -24,11 +24,8 @@ import hust.soict.cybersec.webloganalysis.Main;
 import hust.soict.cybersec.webloganalysis.model.LogEntry.IpAddress;
 
 public class DashboardController implements Initializable {
-    private Main mainApp;
 
-    public void setMainApp(Main mainApp) {
-        this.mainApp = mainApp;
-    }
+    private Main mainApp;
 
     @FXML
     private DatePicker datePicker;
@@ -40,13 +37,7 @@ public class DashboardController implements Initializable {
     private LineChart<String, Number> linechart;
 
     @FXML
-    private Label nameLabel;
-
-    @FXML
     private PieChart piechart;
-
-    @FXML
-    private Button refreshButton;
 
     @FXML
     private TableView<Rule> ruletable;
@@ -59,6 +50,25 @@ public class DashboardController implements Initializable {
 
     @FXML
     private Label uniqueVisitors;
+
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
+    @FXML
+    void switchToExplorer(ActionEvent event) {
+        this.mainApp.switchToExplorer();
+    }
+
+    @FXML
+    void switchToStream(ActionEvent event) {
+        this.mainApp.switchToStream();
+    }
+
+    @FXML
+    void switchToWelcome(ActionEvent event) {
+        this.mainApp.switchToWelcome();
+    }
 
     @FXML
     void refreshDashboard(ActionEvent event) {
@@ -79,23 +89,10 @@ public class DashboardController implements Initializable {
 		LogLineChart.addData(linechart, targetDate);
 		setupActionToLineChart();
 		StatusCodeTable.addData(statustable, targetDate);
-//		ModsecRuleTable.addData(ruletable, targetDate);
+		RuleTable.addData(ruletable, targetDate);
     }
 
-    @FXML
-    void switchToExplorer(ActionEvent event) {
-        this.mainApp.switchToExplorer();
-    }
 
-    @FXML
-    void switchToStream(ActionEvent event) {
-        this.mainApp.switchToStream();
-    }
-
-    @FXML
-    void switchToWelcome(ActionEvent event) {
-        this.mainApp.switchToWelcome();
-    }
 
     private  void setupDatePicker() {
         datePicker.setValue(LocalDate.now());

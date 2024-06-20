@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import java.io.File;
 
 public class CreProfileController  {
+
     private Main mainApp;
 
     @FXML
@@ -27,8 +28,6 @@ public class CreProfileController  {
 
     @FXML
     private TextField profileName;
-
-
 
     public void setMainApp(Main mainApp) {
         this.mainApp = mainApp;
