@@ -13,13 +13,12 @@ import java.util.ArrayList;
 public class Config {
     public static String apacheLogPath;
     public static String modsecLogPath;
-    public static ArrayList<Profile> profiles;
 
     public static void createNewProfile(JsonObject profile) {
         apacheLogPath = profile.get("apacheLogPath").getAsString();
         modsecLogPath = profile.get("modsecLogPath").getAsString();
 
-        String filePath = System.getProperty("user.dir") + "\\profile.txt";
+        String filePath = "src/main/resources/hust/soict/cybersec/webloganalysis/profile.txt";
         try (FileWriter writer = new FileWriter(filePath, true)){
             writer.write(profile.toString() + "\n");
         }
@@ -30,20 +29,14 @@ public class Config {
     }
 
     public static void loadProfile(ComboBox<String> profileCb) {
-        String filePath = System.getProperty("user.dir") + "\\profile.txt";
+        String filePath = "src/main/resources/hust/soict/cybersec/webloganalysis/profile.txt";
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(filePath);
              BufferedReader br = new BufferedReader(reader)) {
             String line;
             while ((line = br.readLine()) != null) {
-                try {
-                    Profile temp = gson.fromJson(line, Profile.class);
-                    profiles.add(temp);
-                    profileCb.getItems().add(temp.getName());
-                }
-                finally {
-                    continue;
-                }
+                JsonObject profile = gson.fromJson(line, JsonObject.class);
+                profileCb.getItems().add(profile.get("profileName").getAsString());
             }
 
         } catch (IOException e) {
@@ -52,43 +45,24 @@ public class Config {
     }
 
     public static boolean checkProfile(String pass, String name) {
-        for(Profile p : profiles) {
-            if (p.getName().equals(name)) {
-                if (p.getPassword().equals(pass)) {
-                    apacheLogPath = p.getApacheLogPath();
-                    modsecLogPath = p.getModsecLogPath();
+        String filePath = "src/main/resources/hust/soict/cybersec/webloganalysis/profile.txt";
+        Gson gson = new Gson();
+        try (FileReader reader = new FileReader(filePath);
+             BufferedReader br = new BufferedReader(reader)) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                JsonObject profile = gson.fromJson(line, JsonObject.class);
+                if (profile.get("profileName").getAsString().equals(name) && profile.get("password").getAsString().equals(pass)) {
+                    apacheLogPath = profile.get("apacheLogPath").getAsString();
+                    modsecLogPath = profile.get("modsecLogPath").getAsString();
                     return true;
                 }
-                else {
-                    return false;
-                }
             }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return false;
     }
 
-
-    class Profile{
-
-        private String profileName;
-        private String password;
-        private String apacheLogPath;
-        private String modsecLogPath;
-
-        public String getName() {
-            return profileName;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public String getApacheLogPath() {
-            return apacheLogPath;
-        }
-
-        public String getModsecLogPath() {
-            return modsecLogPath;
-        }
-    }
 }
