@@ -23,8 +23,8 @@ public class Main  extends Application {
         try {
             this.primaryStage = primaryStage;
             primaryStage.setTitle("Service Log Analyze");
-//            Image appicon = new Image(new FileInputStream("src/main/resources/hust/soict/cybersec/webloganalysis/image/loganalysis_icon.png"));
-//            primaryStage.getIcons().add(appicon);
+            Image appicon = new Image(new FileInputStream("src/main/resources/hust/soict/cybersec/webloganalysis/image/log_analysis.png"));
+            primaryStage.getIcons().add(appicon);
 
             //load Register
             FXMLLoader registerLoader = new FXMLLoader(getClass().getResource("view/CreProfile.fxml"));
@@ -77,6 +77,7 @@ public class Main  extends Application {
     }
     public void switchToWelcome() {
         dashboardController.trigger();
+        streamController.trigger();
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
         primaryStage.setScene(welcome);
