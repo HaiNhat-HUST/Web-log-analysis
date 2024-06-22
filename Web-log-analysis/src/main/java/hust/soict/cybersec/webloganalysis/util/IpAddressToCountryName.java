@@ -48,7 +48,7 @@ public class IpAddressToCountryName {
         totalVisitors = 0;
         uniqueVisitors = 0;
         String filePath = Config.apacheLogPath;
-        File database = new File("src/main/resources/project1/MainApp/IpDatabase/GeoLite2-Country.mmdb");
+        File database = new File("src/main/resources/hust/soict/cybersec/webloganalysis/database/GeoLite2-Country.mmdb");
         TreeMap<String, Integer> tMap = new TreeMap<String, Integer>();
         TreeMap<String, Integer> tMap1 = new TreeMap<String, Integer>();
         ObservableList<IpAddress> ips = FXCollections.observableArrayList();
