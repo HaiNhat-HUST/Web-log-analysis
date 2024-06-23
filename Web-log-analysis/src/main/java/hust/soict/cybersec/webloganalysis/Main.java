@@ -1,20 +1,19 @@
 package hust.soict.cybersec.webloganalysis;
 
 import hust.soict.cybersec.webloganalysis.controller.*;
+import hust.soict.cybersec.webloganalysis.util.Config;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Objects;
 
 public class Main  extends Application {
 
@@ -28,7 +27,7 @@ public class Main  extends Application {
     private ExplorerController explorerController;
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Config.currrentPath = System.getProperty("user.dir");
+        Config.currentPath = System.getProperty("user.dir");
         String filePath = System.getProperty("user.dir") + File.separator + "profile.txt";
         Path path = Paths.get(filePath);
         if (!Files.exists(path)) {
