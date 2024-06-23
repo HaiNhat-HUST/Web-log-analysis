@@ -1,9 +1,6 @@
 package hust.soict.cybersec.webloganalysis.util;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.util.TreeMap;
 import com.maxmind.geoip2.DatabaseReader;
@@ -48,7 +45,7 @@ public class IpAddressToCountryName {
         totalVisitors = 0;
         uniqueVisitors = 0;
         String filePath = Config.apacheLogPath;
-        File database = new File("src/main/resources/hust/soict/cybersec/webloganalysis/database/GeoLite2-Country.mmdb");
+        InputStream database = Main.class.getResourceAsStream("database/GeoLite2-Country.mmdb");
         TreeMap<String, Integer> tMap = new TreeMap<String, Integer>();
         TreeMap<String, Integer> tMap1 = new TreeMap<String, Integer>();
         ObservableList<IpAddress> ips = FXCollections.observableArrayList();
@@ -98,7 +95,7 @@ public class IpAddressToCountryName {
         for(String name : tMap1.keySet()) {
             countryList.add(new PieChart.Data(name, tMap1.get(name)));
         }
-        pieChart.setData(countryList);
-        ipTable.setItems(ips);      
+        ipTable.setItems(ips);
+        pieChart.setData(countryList);      
     }
 }
