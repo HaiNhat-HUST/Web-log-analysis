@@ -40,7 +40,7 @@ public class CreProfileController  {
         FileChooser filechooser = new FileChooser();
         filechooser.setTitle("Select the log source");
 
-        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
+        File resourceDir = new File(System.getProperty("user.dir"));
         filechooser.setInitialDirectory(resourceDir);
         java.io.File selectedFile = filechooser.showOpenDialog(stage);
 
@@ -56,7 +56,7 @@ public class CreProfileController  {
         FileChooser filechooser = new FileChooser();
         filechooser.setTitle("Select the log source");
 
-        File resourceDir = new File("src/main/resources/hust/soict/cybersec/webloganalysis/log_sample");
+        File resourceDir = new File(System.getProperty("user.dir"));
         filechooser.setInitialDirectory(resourceDir);
         java.io.File selectedFile = filechooser.showOpenDialog(stage);
 
@@ -72,7 +72,6 @@ public class CreProfileController  {
 
     @FXML
     void submit(ActionEvent event) {
-        //file is not config ???
         createNewProfile();
         mainApp.switchToWelcome();
     }
