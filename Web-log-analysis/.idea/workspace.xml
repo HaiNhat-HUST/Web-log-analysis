@@ -7,9 +7,7 @@
     <list default="true" id="6b2750c3-6897-490b-b4a7-7ae00c724e17" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/profile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/cybersec/webloganalysis/util/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hust/soict/cybersec/webloganalysis/view/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hust/soict/cybersec/webloganalysis/view/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/welome/update-about-us",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/log_sample",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/welome/update-about-us&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Desktop/Web-log-analysis/Web-log-analysis/src/main/resources/hust/soict/cybersec/webloganalysis/log_sample&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Desktop\Web-log-analysis\Web-log-analysis\src\main\resources\hust\soict\cybersec\webloganalysis\log_sample" />
@@ -123,6 +121,7 @@
       <workItem from="1718814050114" duration="2580000" />
       <workItem from="1718855184762" duration="1171000" />
       <workItem from="1719149975193" duration="930000" />
+      <workItem from="1719150966480" duration="792000" />
     </task>
     <servers />
   </component>
