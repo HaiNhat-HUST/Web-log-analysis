@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class Config {
     public static String apacheLogPath;
     public static String modsecLogPath;
-    public static ArrayList<Profile> profiles;
+    public static ArrayList<Profile> profiles = new ArrayList<Profile>();
 
     public static void createNewProfile(JsonObject profile) {
         apacheLogPath = profile.get("apacheLogPath").getAsString();
@@ -36,7 +36,7 @@ public class Config {
              BufferedReader br = new BufferedReader(reader)) {
             String line;
             while ((line = br.readLine()) != null) {
-                try {
+                try{
                     Profile temp = gson.fromJson(line, Profile.class);
                     profiles.add(temp);
                     profileCb.getItems().add(temp.getName());
@@ -75,6 +75,9 @@ public class Config {
         private String apacheLogPath;
         private String modsecLogPath;
 
+        public Profile() {
+
+        }
         public String getName() {
             return profileName;
         }

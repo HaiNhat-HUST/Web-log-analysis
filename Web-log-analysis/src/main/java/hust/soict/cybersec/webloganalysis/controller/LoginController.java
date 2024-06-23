@@ -46,13 +46,9 @@ public class LoginController implements Initializable {
         }
     }
 
-    private void setupProfileCb() {
-        Config.loadProfile(profileCb);
-    }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Config.profiles = new ArrayList<>();
-        setupProfileCb();
+        Config.loadProfile(profileCb);
+
     }
 }
