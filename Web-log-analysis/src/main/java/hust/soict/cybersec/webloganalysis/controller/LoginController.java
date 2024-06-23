@@ -8,10 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-
-
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -45,7 +42,13 @@ public class LoginController implements Initializable {
             mainApp.switchToWelcome();
         }
     }
-  
+
+    @FXML
+    void logInAsVisitor(ActionEvent event) {
+        Config.logInAsVisitor();
+        this.mainApp.switchToWelcome();
+    }
+    
     private void setupProfileCb() {
         Config.loadProfile(profileCb);
     }
@@ -54,6 +57,5 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         setupProfileCb();
-
     }
 }
