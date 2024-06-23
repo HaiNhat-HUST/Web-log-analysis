@@ -1,7 +1,8 @@
 # Application - Web Log Analysis
 
 ## Description
- **web Log Analysis** is an application desined to analyze web log services, visualize statistical data, and transmit log data from Apache server and ModSecurity firewall. The applicaiton provides an overview of overall log data, status and security problems from server and firewall.
+ **Web Log Analysis** is an application desined to analyze web log services, visualize statistical data, and transmit log data from Apache server and ModSecurity firewall. The applicaiton provides an overview of overall log data, status and security problems from server and firewall.
+
 This project is developed in the Java prpgramming language with JavaFx for the user interface and adhering to Object-Oriented Programming principles. It is also managed and built by Maven ,which helps optimize the development process and integrate the necessary libraries.
 ## Key Feature
 - **Log parsing and analysis:** Reads and analyzes Apache server and ModSecurity firewall log files.
@@ -19,7 +20,7 @@ This project is developed in the Java prpgramming language with JavaFx for the u
 1. Clone the repository
 2. Build with Maven
 3. Run the application
-4. 
+
 ## Author
 - Le Hai Nhat : nhat.lh225583@sis.hust.edu.vn
 - Pham Tuan Anh : anh.tp22555542@sis.hust.edu.vn
