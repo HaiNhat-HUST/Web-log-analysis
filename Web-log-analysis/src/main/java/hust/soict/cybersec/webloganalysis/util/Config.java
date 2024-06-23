@@ -2,12 +2,12 @@ package hust.soict.cybersec.webloganalysis.util;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import hust.soict.cybersec.webloganalysis.Main;
 import javafx.scene.control.ComboBox;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,7 +22,7 @@ public class Config {
         apacheLogPath = profile.get("apacheLogPath").getAsString();
         modsecLogPath = profile.get("modsecLogPath").getAsString();
         
-        try (FileWriter writer = new FileWriter(currrentPath + File.separator + "profile.txt", true)){
+        try (FileWriter writer = new FileWriter(currentPath + File.separator + "profile.txt", true)){
             writer.write(profile.toString() + "\n");
         }
         catch (IOException e) {
@@ -32,7 +32,7 @@ public class Config {
     }
 
     public static void loadProfile(ComboBox<String> profileCb) {
-        String filePath = currrentPath + File.separator + "profile.txt"
+        String filePath = currentPath + File.separator + "profile.txt";
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(filePath);
              BufferedReader br = new BufferedReader(reader)) {
@@ -48,7 +48,7 @@ public class Config {
     }
 
     public static boolean checkProfile(String pass, String name) {
-        String filePath = currrentPath + File.separator + "profile.txt"
+        String filePath = currentPath + File.separator + "profile.txt";
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(filePath);
              BufferedReader br = new BufferedReader(reader)) {
