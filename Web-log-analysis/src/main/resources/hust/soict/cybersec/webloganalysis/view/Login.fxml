@@ -21,8 +21,8 @@
                                 <Font name="System Bold" size="36.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="password" layoutX="215.0" layoutY="187.0" prefHeight="26.0" prefWidth="149.0" />
-                        <Button layoutX="305.0" layoutY="288.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="60.0" text="Start" />
+                        <TextField fx:id="password" layoutX="215.0" layoutY="187.0" prefHeight="26.0" prefWidth="173.0" />
+                        <Button layoutX="326.0" layoutY="315.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="60.0" text="Start" />
                         <Label layoutX="52.0" layoutY="186.0" prefHeight="27.0" prefWidth="87.0" text="Password:">
                             <font>
                                 <Font size="18.0" />
@@ -33,8 +33,9 @@
                                 <Font size="18.0" />
                             </font>
                         </Label>
-                        <Button layoutX="168.0" layoutY="289.0" mnemonicParsing="false" onAction="#addNewProfile" text="Create new profile" />
-                        <ComboBox fx:id="profileCb" layoutX="214.0" layoutY="138.0" prefWidth="150.0" />
+                        <Button layoutX="189.0" layoutY="315.0" mnemonicParsing="false" onAction="#addNewProfile" prefHeight="26.0" text="Create new profile" />
+                        <ComboBox fx:id="profileCb" layoutX="214.0" layoutY="138.0" prefHeight="26.0" prefWidth="173.0" />
+                  <Button layoutX="26.0" layoutY="316.0" mnemonicParsing="false" onAction="#logInAsVisitor" prefHeight="26.0" text="Log in as visitor" />
                     </children>
                 </AnchorPane>
             </center>
