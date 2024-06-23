@@ -107,7 +107,7 @@ public class StreamLogTable {
             }
         };
 
-        scheduler.scheduleAtFixedRate(functionToRun, 0, Integer.parseInt(timeInterval), TimeUnit.MILLISECONDS);
+        scheduler.scheduleAtFixedRate(functionToRun, 0, Integer.parseInt(timeInterval), TimeUnit.MINUTES);
     }
 
     public static void stopStreaming() {
