@@ -5,7 +5,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class Main  extends Application {
 
@@ -23,7 +27,10 @@ public class Main  extends Application {
         try {
             this.primaryStage = primaryStage;
             primaryStage.setTitle("Service Log Analyze");
-            Image appicon = new Image(new FileInputStream("src/main/resources/hust/soict/cybersec/webloganalysis/image/log_analysis.png"));
+
+            InputStream input = getClass().getResourceAsStream("/hust/soict/cybersec/webloganalysis/image/detective.png");
+            Image appicon = new Image(input);
+
             primaryStage.getIcons().add(appicon);
 
             //load Register
