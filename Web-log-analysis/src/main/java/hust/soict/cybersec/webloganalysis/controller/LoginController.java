@@ -45,10 +45,15 @@ public class LoginController implements Initializable {
             mainApp.switchToWelcome();
         }
     }
+  
+    private void setupProfileCb() {
+        Config.loadProfile(profileCb);
+    }
+  
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Config.loadProfile(profileCb);
+        setupProfileCb();
 
     }
 }

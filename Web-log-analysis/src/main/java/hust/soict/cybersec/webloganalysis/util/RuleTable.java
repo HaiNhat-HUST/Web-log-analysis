@@ -28,7 +28,7 @@ public class RuleTable {
     }
 
     public static void addData(TableView<Rule> ruleTable, String dateTarget) {
-        String filePath = "";
+        String filePath = Config.modsecLogPath;
         ObservableList<Rule> rules = FXCollections.observableArrayList();
         HashMap<String, Integer> hm  = new HashMap<>();
         try {

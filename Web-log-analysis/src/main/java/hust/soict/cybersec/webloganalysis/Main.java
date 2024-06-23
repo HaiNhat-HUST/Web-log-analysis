@@ -27,8 +27,10 @@ public class Main  extends Application {
         try {
             this.primaryStage = primaryStage;
             primaryStage.setTitle("Service Log Analyze");
+
             InputStream input = getClass().getResourceAsStream("/hust/soict/cybersec/webloganalysis/image/detective.png");
             Image appicon = new Image(input);
+
             primaryStage.getIcons().add(appicon);
 
             //load Register
@@ -82,6 +84,7 @@ public class Main  extends Application {
     }
     public void switchToWelcome() {
         dashboardController.trigger();
+        streamController.trigger();
         double stageWidth = primaryStage.getWidth();
         double stageHeight = primaryStage.getHeight();
         primaryStage.setScene(welcome);
