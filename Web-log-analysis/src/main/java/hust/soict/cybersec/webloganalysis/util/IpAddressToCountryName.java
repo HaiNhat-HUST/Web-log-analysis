@@ -6,12 +6,12 @@ import java.util.TreeMap;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CountryResponse;
+import hust.soict.cybersec.webloganalysis.Main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-
 import hust.soict.cybersec.webloganalysis.model.LogEntry.IpAddress;
 import hust.soict.cybersec.webloganalysis.model.Parser.ParseAccessLog;
 
