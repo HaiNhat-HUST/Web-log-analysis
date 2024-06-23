@@ -64,7 +64,7 @@ public class ParseAuditLog {
         String inputDate = getTimestamp(log);
         String newDateFormat = "yyyy-MM-dd";
 
-        SimpleDateFormat oldFormat = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss Z");
+        SimpleDateFormat oldFormat = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss.SSSSSS Z");
         SimpleDateFormat newFormat = new SimpleDateFormat(newDateFormat);
 
         String outputDate = "";
