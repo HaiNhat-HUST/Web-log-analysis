@@ -113,7 +113,10 @@
                                         </AnchorPane>
                                         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                             <children>
-                                                <Label layoutX="10.0" layoutY="5.0" text="#Unique visitor" />
+                                                <Label layoutX="10.0" layoutY="5.0" text="#Unique visitor">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
                                                 <Label fx:id="uniqueVisitors" layoutX="17.0" layoutY="24.0" prefHeight="18.0" prefWidth="67.0" text="852" />
                                             </children>
                                         </AnchorPane>
