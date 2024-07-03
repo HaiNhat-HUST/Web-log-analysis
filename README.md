@@ -10,8 +10,11 @@ This project is developed in the Java prpgramming language with JavaFx for the u
 - **Interactive interface:** Allow user interaction to filter and view detailed information.
 ## Feature Demo
 ### Visualize data
+https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/7d309248-cabc-4cd8-8ce0-8a1262a4660b
 ### Filter log data
+https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/e4681905-cf7b-48d5-8163-410ec0370780
 ### Tream log data
+https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/ad51a58c-17e6-4b2f-951f-7cebbcd9518b
 ## System Requirement
 - Java 8 or higher
 - Maven
