@@ -69,8 +69,8 @@ public class Config {
     }
 
     public static void logInAsVisitor() {
-        String accessFile = currrentPath + File.separator + "access.log";
-        String modsecFile = currrentPath + File.separator + "modsec.log";
+        String accessFile = currentPath + File.separator + "access.log";
+        String modsecFile = currentPath + File.separator + "modsec.log";
         apacheLogPath = accessFile;
         modsecLogPath = modsecFile;
         Path accessPath = Paths.get(accessFile);
