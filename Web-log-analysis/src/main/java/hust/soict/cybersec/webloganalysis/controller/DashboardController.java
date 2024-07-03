@@ -110,7 +110,7 @@ public class DashboardController implements Initializable {
     }
 
     private void setupIpTableAndPieChart() {
-        IpAddressToCountryName.creatIpTable(iptable);
+        IpAddressToCountryName.createIpTable(iptable);
         IpAddressToCountryName.addData(iptable, piechart, datePicker.getValue().toString());
 		iptable.setOnMouseClicked(event -> {
 			if (event.getClickCount() == 2) {

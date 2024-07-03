@@ -68,18 +68,18 @@
                                 <Font name="System Bold" size="22.0" />
                             </font>
                         </Label>
-                        <HBox alignment="CENTER" layoutY="44.0" prefHeight="42.0" prefWidth="746.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <HBox alignment="CENTER" layoutY="44.0" prefHeight="42.0" prefWidth="746.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                             <children>
-                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="75.0" text="Filter">
+                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Filter">
                                     <HBox.margin>
-                                        <Insets left="10.0" right="10.0" />
-                                    </HBox.margin>
-                                    <padding>
-                                        <Insets left="20.0" right="20.0" />
-                                    </padding></Button>
+                                        <Insets />
+                                    </HBox.margin></Button>
                                 <TextField fx:id="searching" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="214.0" promptText="Searching" />
-                                <Button maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false"  prefHeight="26.0" prefWidth="67.0" text="Refresh" />
+                                <Button maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Refresh" />
                             </children>
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
                         </HBox>
                         <TabPane fx:id="tablePane" layoutX="23.0" layoutY="88.8" prefHeight="466.0" prefWidth="740.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="89.0">
                             <tabs>
