@@ -14,7 +14,7 @@ This demo mainly uses the **login as visitor** feature, which is a sample profil
 https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/7d309248-cabc-4cd8-8ce0-8a1262a4660b
 ### Filter log data
 https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/e4681905-cf7b-48d5-8163-410ec0370780
-### Tream log data
+### Stream log data
 https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/ad51a58c-17e6-4b2f-951f-7cebbcd9518b
 
 For further guide and fully demo, see this full video on youtube for demo with Ubuntu OS: https://youtu.be/eq44JOHHUHw
