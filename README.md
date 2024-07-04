@@ -20,7 +20,73 @@ https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/ad51a58c-17e6-
 For further guide and fully demo, see this full video on youtube for demo with Ubuntu OS: https://youtu.be/eq44JOHHUHw
 
 ## Code structure
-
+```bash
+.
+├── access.log
+├── modsec.log
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── profile.txt
+└── src
+    └── main
+        ├── java
+        │   ├── hust
+        │   │   └── soict
+        │   │       └── cybersec
+        │   │           └── webloganalysis
+        │   │               ├── controller
+        │   │               │   ├── CreProfileController.java
+        │   │               │   ├── DashboardController.java
+        │   │               │   ├── ExplorerController.java
+        │   │               │   ├── LoginController.java
+        │   │               │   ├── StreamController.java
+        │   │               │   └── WelcomeController.java
+        │   │               ├── Main.java
+        │   │               ├── model
+        │   │               │   ├── LogEntry
+        │   │               │   │   ├── AccessLog.java
+        │   │               │   │   ├── AuditLog.java
+        │   │               │   │   ├── IpAddress.java
+        │   │               │   │   ├── Rule.java
+        │   │               │   │   └── StatusCode.java
+        │   │               │   └── Parser
+        │   │               │       ├── ParseAccessLog.java
+        │   │               │       └── ParseAuditLog.java
+        │   │               └── util
+        │   │                   ├── AccessLogTable.java
+        │   │                   ├── AuditLogTable.java
+        │   │                   ├── Config.java
+        │   │                   ├── IpAddressToCountryName.java
+        │   │                   ├── LogLineChart.java
+        │   │                   ├── RuleTable.java
+        │   │                   ├── StatusCodeTable.java
+        │   │                   └── StreamLogTable.java
+        │   └── module-info.java
+        └── resources
+            └── hust
+                └── soict
+                    └── cybersec
+                        └── webloganalysis
+                            ├── database
+                            │   └── GeoLite2-Country.mmdb
+                            ├── image
+                            │   ├── detective.png
+                            │   ├── HaiNhat.jpg
+                            │   ├── log_analysis.png
+                            │   ├── login.png
+                            │   └── TuanAnh.jpg
+                            ├── log_sample
+                            │   ├── access.log
+                            │   └── modsec.log
+                            └── view
+                                ├── CreProfile.fxml
+                                ├── Dashboard.fxml
+                                ├── Explorer.fxml
+                                ├── Login.fxml
+                                ├── Stream.fxml
+                                └── Welcome.fxml
+```
 ## System Requirement
 - Java 22 or higher
 - Maven
