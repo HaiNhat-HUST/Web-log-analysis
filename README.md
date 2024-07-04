@@ -19,10 +19,12 @@ https://github.com/HaiNhat-HUST/Web-log-analysis/assets/172204714/ad51a58c-17e6-
 
 For further guide and fully demo, see this full video on youtube for demo with Ubuntu OS: https://youtu.be/eq44JOHHUHw
 
+## Code structure
+
 ## System Requirement
-- Java 8 or higher
+- Java 22 or higher
 - Maven
-- JavaFX(included in JDK 8 and above)
+- JavaFX(included in JDK 22 and above)
 ## Installation and Running
 1. Clone the repository
 2. Build with Maven
